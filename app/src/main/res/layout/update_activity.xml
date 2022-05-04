@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- Для обновления информации -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+        <Button
+            android:id="@+id/cacelButtonIdUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:layout_marginRight="2dp"
+            android:background="#00000000"
+            />
+        <Button
+            android:id="@+id/saveButtonIdUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обновить"
+            android:layout_marginRight="2dp"
+            android:background="#00000000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/subjectEditTextIdUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#00ffffff"
+            android:ems="10"
+            android:hint="Заголовок"
+            android:inputType="textPersonName"
+
+            android:maxLength="35"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="В чем ты преуспел сегодня больше всего?"
+            android:textColor="@android:color/background_dark"
+            android:textSize="19dp"
+            android:layout_margin="3dp"/>
+
+        <Spinner
+            android:id="@+id/work_spinner_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Как ты оцениваешь свои успехи?"
+            android:textColor="@android:color/background_dark"
+            android:textSize="19dp"
+            android:layout_margin="3dp"/>
+
+        <Spinner
+            android:id="@+id/mood_spinner_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+
+        <EditText
+            android:id="@+id/descriptionEditTextIdUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Описание"
+            android:backgroundTint="#00ffffff"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+</LinearLayout>

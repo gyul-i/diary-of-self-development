@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kirillova.diary.Activity.MainActivity">
+<!--Элементы меню  -->
+    <item
+        android:id="@+id/aboutIdMainActivity"
+        android:orderInCategory="100"
+        android:title="О приложение"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/addGoal"
+        android:orderInCategory="100"
+        android:title="Добавить цель"
+        app:showAsAction="never"
+        />
+</menu>
